@@ -1,0 +1,37 @@
+{
+  "name": "gulp-docx",
+  "version": "1.0.0",
+  "description": "Convert docx to string",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --delay --require should --reporter spec",
+    "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should --delay",
+    "test-travis": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should --delay"
+  },
+  "author": "LingyuCoder",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "~2.1.0",
+    "event-stream": "~3.3.2",
+    "gulp": "~3.9.0",
+    "gulp-rename": "~1.2.2",
+    "istanbul": "~0.3.22",
+    "mocha": "~2.3.3",
+    "run-sequence": "~1.1.4",
+    "should": "~7.1.0",
+    "vinyl": "~1.1.0"
+  },
+  "dependencies": {
+    "docxtemplater": "~1.0.8",
+    "gulp-util": "~3.0.6",
+    "through2": "~2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LingyuCoder/gulp-docx"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/LingyuCoder/gulp-docx/issues"
+  }
+}
